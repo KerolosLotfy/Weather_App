@@ -12,7 +12,7 @@ const apiKey = "7a2329a562a54e2895395149220610";
 
 // Get All Names Countries
 window.onload = async () => {
-  await fetch("/js/countriesName.json")
+  await fetch("./js/countriesName.json")
     .then((res) => res.json())
     .then((res) => {
       for (let i = 0; i < res.length; i++) {
@@ -69,7 +69,7 @@ async function getWeatherData(cName) {
 async function changeBg(cName) {
   bgImg.src =
     "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80";
-  await fetch("/js/myApi.json")
+  await fetch("./js/myApi.json")
     .then((res) => res.json())
     .then((data) => {
       for (const x of data) {
