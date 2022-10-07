@@ -51,7 +51,7 @@ function selectCountry() {
 async function getWeatherData(cName) {
   let flagUrl = `https://countryflagsapi.com/png/${cName}`;
   flag.src = flagUrl;
-  let apiURl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cName}&aqi=no`;
+  let apiURl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cName}&aqi=no`;
   await fetch(apiURl)
     .then((res) => res.json())
     .then((data) => {
