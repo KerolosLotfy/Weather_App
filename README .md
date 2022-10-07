@@ -1,9 +1,5 @@
 # Weather Web Application
 
-## ScreenShot :-
-
-![Weather App!](./rock-paper-scissors-master/design/desktop-preview.jpg)
-
 ### Describation:-
 
 It is Simple Weather Web Application to Show Weather Status According to Name of Country
